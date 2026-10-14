@@ -70,7 +70,7 @@ void guardarCuentas(const vector<Cuenta>& cuentas) {
 
     archivo.close();
 }
-
+////CLASE 2////////////////////////
 // Carga las cuentas desde el archivo de texto (si existe) al iniciar el programa
 void cargarCuentas(vector<Cuenta>& cuentas) {
     ifstream archivo(ARCHIVO_CUENTAS);
@@ -113,7 +113,7 @@ void cargarCuentas(vector<Cuenta>& cuentas) {
     archivo.close();
 }
 
-
+/////////////////CLASE 3:POO////////////////////////////////////////////////7
 // Función para validar el PIN
 bool validarPIN(Cuenta& cuenta) {
     int intentos = 3;
@@ -136,6 +136,7 @@ bool validarPIN(Cuenta& cuenta) {
     return false;
 }
 
+///////CLASE 3:POO//////////////////////////////////////////////////77
 // Consultar saldo
 void consultarSaldo(const Cuenta& cuenta) {
     cout << "\n--- CONSULTA DE SALDO ---\n";
@@ -143,7 +144,7 @@ void consultarSaldo(const Cuenta& cuenta) {
     cout << "Cuenta:  " << cuenta.numeroCuenta << endl;
     cout << "Saldo:   $" << cuenta.saldo << endl;
 }
- 
+ ////CLASE 3:POO//////////////////////////////////////////////////////7
 // Retirar dinero
 void retirar(Cuenta& cuenta) {
     float monto;
@@ -162,7 +163,7 @@ void retirar(Cuenta& cuenta) {
         cout << "Retiro exitoso. Nuevo saldo: $" << cuenta.saldo << endl;
     }
 }
- 
+ ////////////////CLASE 3:POO///////////////////////////////////////////////77
 // Depositar dinero
 void depositar(Cuenta& cuenta) {
     float monto;
@@ -178,7 +179,7 @@ void depositar(Cuenta& cuenta) {
         cout << "Depósito exitoso. Nuevo saldo: $" << cuenta.saldo << endl;
     }
 }
- 
+ ///////////////CLASE 3:POO//////////////////////////////////////////7
 // Cambiar PIN
 void cambiarPIN(Cuenta& cuenta) {
     int pinActual, nuevoPIN, confirmacion;
@@ -205,7 +206,7 @@ void cambiarPIN(Cuenta& cuenta) {
         cout << "Los PIN no coinciden. Intenta de nuevo.\n";
     }
 }
- 
+ ////////////CLASE 3:POO//////////////////////////////////
 // Ver movimientos
 void verMovimientos(const Cuenta& cuenta) {
     cout << "\n--- ÚLTIMOS MOVIMIENTOS ---\n";
